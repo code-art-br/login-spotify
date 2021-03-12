@@ -9,7 +9,7 @@
 }
 
 body{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -17,20 +17,22 @@ body{
     flex-direction: column;
 }
 
+.border{
+    border-bottom: 1px solid rgb(200, 200, 200);
+    margin-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #logo{
   width: 275px;
   height: 100px;
 }
 
-.border{
-    border-bottom: 1px solid rgb(200, 200, 200);
-    margin-bottom: 20px;
-    width: 100vw;
-}
-
 main{
-    width: 60vh;
-    height: 70%;
+    min-width: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -38,8 +40,8 @@ main{
 }
 
 main button{
-    width: 30vw;
-    height: 6vh;
+    width: 90%;
+    min-height: 8%;
     background-color: white;
     color: grey;
     margin-bottom: 10px;
@@ -99,6 +101,10 @@ main button{
     color: white;
 }
 
+section{
+    margin-top: 1rem;
+}
+
 section a {
     position: relative;
     font-size: 12px;
@@ -125,7 +131,7 @@ form{
     justify-content: center;
     flex-direction: column;
     color: black;
-    margin-top: 1rem;    
+    margin-top: 2rem;    
 }
 
 form input[type=text]{
@@ -171,16 +177,17 @@ footer{
     justify-content: left;
     margin-top: 20px;
     border-bottom: 1px solid rgb(200, 200, 200);
+    padding-bottom: 1rem;
 }
 
 footer label{
-    width: 30vh;
+    min-width: 50%;
     cursor: pointer;
     color: #616467;
 }
 
 footer input[type=button] {
-    width: 15vw;
+    min-width: 50%;
     height: 6vh;
     border-radius: 20px;
     color: white;
@@ -205,6 +212,7 @@ footer span{
 }
 
 .register{
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -214,24 +222,22 @@ footer span{
 }
 
 .register input[type=button]{
-    width: 30vw;
-    height: 6vh;
+    min-width: 90%;
+    min-height: 3.5rem;
     background-color: white;
     color: grey;
-    margin-bottom: 10px;
     border-radius: 25px;
     font-size: 14px;
     letter-spacing: 1px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     border: 2px solid #616467;
     margin-top: 35px;
+    margin-bottom: 35px;
     transition: 0.2s;
 }
 
 .register input[type=button]:hover{
     background: #616467;
     color: white;
+    cursor: pointer;
 }
